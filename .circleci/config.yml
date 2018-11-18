@@ -5,6 +5,7 @@
 version: 2
 jobs:
   build-service1:
-    working_directory: ~/backend/service1
-    steps:
-      - run: ./run-tests.sh
+    machine:
+      working_directory: ~/backend/service1
+      steps:
+        - run: ./run-tests.sh
