@@ -8,6 +8,4 @@ jobs:
     machine:
       working_directory: ~/backend/service1
       steps:
-        - run:
-          name: Testing service 1
-          command: ./run-tests.sh
+        - run: ./run-tests.sh
