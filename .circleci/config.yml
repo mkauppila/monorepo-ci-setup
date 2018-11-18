@@ -5,12 +5,11 @@
 version: 2
 jobs:
   build-service1:
-    machine:
-      working_directory: ~/backend/service1
-      steps:
-        - run:
-            name: running tests for service 1
-            command: ./run-tests.sh
+    working_directory: ~/backend/service1
+    steps:
+      - run:
+          name: running tests for service 1
+          command: ./run-tests.sh
 workflows:
   version: 2
   build:
