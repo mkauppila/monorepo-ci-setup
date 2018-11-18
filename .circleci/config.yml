@@ -6,7 +6,7 @@ version: 2
 jobs:
   build-service1:
     machine: true
-    working_directory: ~/backend/service1
+    working_directory: ~/backend/service1/
     steps:
       - run:
           name: running tests for service 1
